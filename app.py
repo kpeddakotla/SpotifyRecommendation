@@ -1,11 +1,11 @@
 import spotipy
 import spotipy.util as util
 
-client_id = "dde87834e3504515b16aa5e847e0dd9a"
-client_secret = "141fceeb610947128a5aac33417046ca"
-redirect_uri = "https://accounts.spotify.com/authorize?client_id=dde87834e3504515b16aa5e847e0dd9a&response_type=code&redirect_uri=google.com&scope=user-library-read"
+client_id = "CLIENT_ID"
+client_secret = "CLIENT_ID_SECRET"
+redirect_uri = "CLIENT_REDIRECT"
 
-username = "kpeddakotla"
+username = "CLIENT_USER"
 scope = "user-library-read"
 
 token = util.prompt_for_user_token(username, scope, client_id, client_secret, redirect_uri)
